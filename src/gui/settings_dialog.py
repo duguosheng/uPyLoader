@@ -1,8 +1,8 @@
-from PyQt5.QtCore import QDir
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QDialog
-from PyQt5.QtWidgets import QFileDialog
-from PyQt5.QtWidgets import QKeySequenceEdit
+from PySide6.QtCore import QDir
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import QDialog
+from PySide6.QtWidgets import QFileDialog
+from PySide6.QtWidgets import QKeySequenceEdit
 
 from gui.settings import Ui_SettingsDialog
 from src.utility.settings import Settings

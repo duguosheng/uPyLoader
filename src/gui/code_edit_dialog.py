@@ -1,6 +1,6 @@
-from PyQt5.QtCore import pyqtSignal, Qt
-from PyQt5.QtGui import QFontDatabase
-from PyQt5.QtWidgets import QMessageBox, QDialog
+from PySide6.QtCore import Signal, Qt
+from PySide6.QtGui import QFontDatabase
+from PySide6.QtWidgets import QMessageBox, QDialog
 
 from gui.code_edit import Ui_CodeEditDialog
 from src.gui.file_transfer_dialog import FileTransferDialog
@@ -8,7 +8,7 @@ from src.utility.settings import Settings
 
 
 class CodeEditDialog(QDialog, Ui_CodeEditDialog):
-    mcu_file_saved = pyqtSignal()
+    mcu_file_saved = Signal()
 
     def __init__(self, parent, connection):
         super(CodeEditDialog, self).__init__(None, Qt.WindowCloseButtonHint)

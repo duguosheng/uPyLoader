@@ -1,7 +1,7 @@
 import sys
 
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QApplication
+from PySide6.QtGui import QIcon
+from PySide6.QtWidgets import QApplication
 
 from src.gui.main_window import MainWindow
 from src.helpers.pyinstaller_helper import PyInstallerHelper
@@ -30,4 +30,4 @@ if __name__ == '__main__':
     ex2.show()
 
     # Execute the Application and Exit
-    sys.exit(myApp.exec_())
+    sys.exit(myApp.exec())

@@ -1,4 +1,4 @@
-import PyQt5.uic
+import PySide6.uic
 import os
 import re
 
@@ -48,7 +48,7 @@ def replace_resources(file_path):
 
 
 def main():
-    PyQt5.uic.compileUiDir('./gui/qt', map=map)
+    PySide6.uic.compileUiDir('./gui/qt', map=map)
 
     for file in os.listdir('./gui'):
         file_path = "./gui/" + file

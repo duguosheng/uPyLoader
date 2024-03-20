@@ -1,5 +1,5 @@
-from PyQt5.QtCore import QStringListModel, QModelIndex, Qt
-from PyQt5.QtWidgets import QDialog, QMessageBox
+from PySide6.QtCore import QStringListModel, QModelIndex, Qt
+from PySide6.QtWidgets import QDialog, QMessageBox
 
 from gui.wifi_preset import Ui_WiFiPresetDialog
 from src.helpers.ip_helper import IpHelper

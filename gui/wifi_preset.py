@@ -1,142 +1,198 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './gui/qt\wifi_preset.ui'
-#
-# Created by: PyQt5 UI code generator 5.6
-#
-# WARNING! All changes made in this file will be lost!
+################################################################################
+## Form generated from reading UI file 'wifi_preset.ui'
+##
+## Created by: Qt User Interface Compiler version 6.6.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-
-
-# Added by buildgui.py script to support pyinstaller
-from src.helpers.pyinstaller_helper import PyInstallerHelper
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QDialog, QHBoxLayout,
+    QLabel, QLineEdit, QListView, QPushButton,
+    QSizePolicy, QSpacerItem, QSpinBox, QVBoxLayout,
+    QWidget)
 
 class Ui_WiFiPresetDialog(object):
     def setupUi(self, WiFiPresetDialog):
-        WiFiPresetDialog.setObjectName("WiFiPresetDialog")
+        if not WiFiPresetDialog.objectName():
+            WiFiPresetDialog.setObjectName(u"WiFiPresetDialog")
         WiFiPresetDialog.resize(451, 420)
-        self.verticalLayout = QtWidgets.QVBoxLayout(WiFiPresetDialog)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.presetsListView = QtWidgets.QListView(WiFiPresetDialog)
-        self.presetsListView.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
-        self.presetsListView.setObjectName("presetsListView")
+        self.verticalLayout = QVBoxLayout(WiFiPresetDialog)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.presetsListView = QListView(WiFiPresetDialog)
+        self.presetsListView.setObjectName(u"presetsListView")
+        self.presetsListView.setEditTriggers(QAbstractItemView.NoEditTriggers)
+
         self.verticalLayout.addWidget(self.presetsListView)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(-1, -1, -1, 0)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label_2 = QtWidgets.QLabel(WiFiPresetDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
+        self.label_2 = QLabel(WiFiPresetDialog)
+        self.label_2.setObjectName(u"label_2")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
         self.label_2.setSizePolicy(sizePolicy)
-        self.label_2.setMinimumSize(QtCore.QSize(70, 0))
-        self.label_2.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.label_2.setObjectName("label_2")
+        self.label_2.setMinimumSize(QSize(70, 0))
+        self.label_2.setMaximumSize(QSize(100, 16777215))
+
         self.horizontalLayout.addWidget(self.label_2)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem)
-        self.nameLineEdit = QtWidgets.QLineEdit(WiFiPresetDialog)
-        self.nameLineEdit.setMinimumSize(QtCore.QSize(200, 0))
-        self.nameLineEdit.setObjectName("nameLineEdit")
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer_3)
+
+        self.nameLineEdit = QLineEdit(WiFiPresetDialog)
+        self.nameLineEdit.setObjectName(u"nameLineEdit")
+        self.nameLineEdit.setMinimumSize(QSize(200, 0))
+
         self.horizontalLayout.addWidget(self.nameLineEdit)
+
+
         self.verticalLayout_2.addLayout(self.horizontalLayout)
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.label_3 = QtWidgets.QLabel(WiFiPresetDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
+        self.label_3 = QLabel(WiFiPresetDialog)
+        self.label_3.setObjectName(u"label_3")
         sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
         self.label_3.setSizePolicy(sizePolicy)
-        self.label_3.setMinimumSize(QtCore.QSize(70, 0))
-        self.label_3.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.label_3.setObjectName("label_3")
+        self.label_3.setMinimumSize(QSize(70, 0))
+        self.label_3.setMaximumSize(QSize(16777215, 16777215))
+
         self.horizontalLayout_3.addWidget(self.label_3)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem1)
-        self.ipLineEdit = QtWidgets.QLineEdit(WiFiPresetDialog)
-        self.ipLineEdit.setMinimumSize(QtCore.QSize(200, 0))
-        self.ipLineEdit.setObjectName("ipLineEdit")
+
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_2)
+
+        self.ipLineEdit = QLineEdit(WiFiPresetDialog)
+        self.ipLineEdit.setObjectName(u"ipLineEdit")
+        self.ipLineEdit.setMinimumSize(QSize(200, 0))
+
         self.horizontalLayout_3.addWidget(self.ipLineEdit)
+
+
         self.verticalLayout_2.addLayout(self.horizontalLayout_3)
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.label_4 = QtWidgets.QLabel(WiFiPresetDialog)
-        self.label_4.setMinimumSize(QtCore.QSize(70, 0))
-        self.label_4.setMaximumSize(QtCore.QSize(70, 16777215))
-        self.label_4.setObjectName("label_4")
+        self.label_4 = QLabel(WiFiPresetDialog)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMinimumSize(QSize(70, 0))
+        self.label_4.setMaximumSize(QSize(70, 16777215))
+
         self.horizontalLayout_4.addWidget(self.label_4)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem2)
-        self.portSpinBox = QtWidgets.QSpinBox(WiFiPresetDialog)
-        self.portSpinBox.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer)
+
+        self.portSpinBox = QSpinBox(WiFiPresetDialog)
+        self.portSpinBox.setObjectName(u"portSpinBox")
+        self.portSpinBox.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
         self.portSpinBox.setMaximum(65536)
-        self.portSpinBox.setProperty("value", 0)
-        self.portSpinBox.setObjectName("portSpinBox")
+        self.portSpinBox.setValue(0)
+
         self.horizontalLayout_4.addWidget(self.portSpinBox)
+
+
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
-        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_4.setContentsMargins(-1, 0, -1, 0)
+
+        self.verticalLayout_4 = QVBoxLayout()
         self.verticalLayout_4.setSpacing(0)
-        self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(-1, 0, -1, 0)
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_6.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        self.label = QtWidgets.QLabel(WiFiPresetDialog)
-        self.label.setObjectName("label")
+        self.label = QLabel(WiFiPresetDialog)
+        self.label.setObjectName(u"label")
+
         self.horizontalLayout_6.addWidget(self.label)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_6.addItem(spacerItem3)
-        self.passwordLineEdit = QtWidgets.QLineEdit(WiFiPresetDialog)
-        self.passwordLineEdit.setMinimumSize(QtCore.QSize(200, 0))
-        self.passwordLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.passwordLineEdit.setObjectName("passwordLineEdit")
+
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_6.addItem(self.horizontalSpacer_4)
+
+        self.passwordLineEdit = QLineEdit(WiFiPresetDialog)
+        self.passwordLineEdit.setObjectName(u"passwordLineEdit")
+        self.passwordLineEdit.setMinimumSize(QSize(200, 0))
+        self.passwordLineEdit.setEchoMode(QLineEdit.Password)
+
         self.horizontalLayout_6.addWidget(self.passwordLineEdit)
+
+
         self.verticalLayout_4.addLayout(self.horizontalLayout_6)
-        self.label_5 = QtWidgets.QLabel(WiFiPresetDialog)
-        self.label_5.setMinimumSize(QtCore.QSize(0, 0))
-        self.label_5.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        font = QtGui.QFont()
+
+        self.label_5 = QLabel(WiFiPresetDialog)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 0))
+        self.label_5.setMaximumSize(QSize(16777215, 16777215))
+        font = QFont()
         font.setPointSize(7)
         self.label_5.setFont(font)
-        self.label_5.setTextFormat(QtCore.Qt.AutoText)
-        self.label_5.setObjectName("label_5")
+        self.label_5.setTextFormat(Qt.AutoText)
+
         self.verticalLayout_4.addWidget(self.label_5)
+
+
         self.verticalLayout_2.addLayout(self.verticalLayout_4)
+
+
         self.horizontalLayout_2.addLayout(self.verticalLayout_2)
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+
+        self.verticalLayout_3 = QVBoxLayout()
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, -1, -1, -1)
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.addButton = QtWidgets.QPushButton(WiFiPresetDialog)
-        self.addButton.setObjectName("addButton")
+        self.addButton = QPushButton(WiFiPresetDialog)
+        self.addButton.setObjectName(u"addButton")
+
         self.verticalLayout_3.addWidget(self.addButton)
-        self.removeButton = QtWidgets.QPushButton(WiFiPresetDialog)
-        self.removeButton.setObjectName("removeButton")
+
+        self.removeButton = QPushButton(WiFiPresetDialog)
+        self.removeButton.setObjectName(u"removeButton")
+
         self.verticalLayout_3.addWidget(self.removeButton)
+
+
         self.horizontalLayout_2.addLayout(self.verticalLayout_3)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout_2)
 
+
         self.retranslateUi(WiFiPresetDialog)
-        QtCore.QMetaObject.connectSlotsByName(WiFiPresetDialog)
+
+        QMetaObject.connectSlotsByName(WiFiPresetDialog)
+    # setupUi
 
     def retranslateUi(self, WiFiPresetDialog):
-        _translate = QtCore.QCoreApplication.translate
-        WiFiPresetDialog.setWindowTitle(_translate("WiFiPresetDialog", "Presets"))
-        self.label_2.setText(_translate("WiFiPresetDialog", "Name"))
-        self.label_3.setText(_translate("WiFiPresetDialog", "IP adress"))
-        self.label_4.setText(_translate("WiFiPresetDialog", "Port"))
-        self.label.setText(_translate("WiFiPresetDialog", "Password"))
-        self.label_5.setText(_translate("WiFiPresetDialog", "<html><head/><body><p><span style=\" color:#d50003;\">Warning: passwords are saved as plaintext</span></p></body></html>"))
-        self.addButton.setText(_translate("WiFiPresetDialog", "Add"))
-        self.removeButton.setText(_translate("WiFiPresetDialog", "Remove"))
+        WiFiPresetDialog.setWindowTitle(QCoreApplication.translate("WiFiPresetDialog", u"Presets", None))
+        self.label_2.setText(QCoreApplication.translate("WiFiPresetDialog", u"Name", None))
+        self.label_3.setText(QCoreApplication.translate("WiFiPresetDialog", u"IP adress", None))
+        self.label_4.setText(QCoreApplication.translate("WiFiPresetDialog", u"Port", None))
+        self.label.setText(QCoreApplication.translate("WiFiPresetDialog", u"Password", None))
+        self.label_5.setText(QCoreApplication.translate("WiFiPresetDialog", u"<html><head/><body><p><span style=\" color:#d50003;\">Warning: passwords are saved as plaintext</span></p></body></html>", None))
+        self.addButton.setText(QCoreApplication.translate("WiFiPresetDialog", u"Add", None))
+        self.removeButton.setText(QCoreApplication.translate("WiFiPresetDialog", u"Remove", None))
+    # retranslateUi
 

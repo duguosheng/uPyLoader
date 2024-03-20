@@ -1,8 +1,8 @@
-from PyQt5.QtCore import QEvent
-from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtGui import QKeyEvent, QHideEvent, QFontDatabase, QTextCursor
-from PyQt5.QtGui import QKeySequence
-from PyQt5.QtWidgets import QDialog, QScrollBar
+from PySide6.QtCore import QEvent
+from PySide6.QtCore import Qt, Signal
+from PySide6.QtGui import QKeyEvent, QHideEvent, QFontDatabase, QTextCursor
+from PySide6.QtGui import QKeySequence
+from PySide6.QtWidgets import QDialog, QScrollBar
 
 from gui.terminal import Ui_TerminalDialog
 from src.helpers.qt_helper import QtHelper
@@ -13,7 +13,7 @@ __author__ = "Ivan Sevcik"
 
 
 class TerminalDialog(QDialog, Ui_TerminalDialog):
-    _update_content_signal = pyqtSignal()
+    _update_content_signal = Signal()
 
     def __init__(self, parent, connection, terminal):
         super(TerminalDialog, self).__init__(None, Qt.WindowCloseButtonHint)

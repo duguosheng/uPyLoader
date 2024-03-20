@@ -1,10 +1,10 @@
 import json
 import os
 
-from PyQt5.QtCore import QByteArray
-from PyQt5.QtCore import QDir
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QKeySequence
+from PySide6.QtCore import QByteArray
+from PySide6.QtCore import QDir
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QKeySequence
 
 from src.utility.relative_path_resolver import RelativePathResolver
 from src.utility.singleton import Singleton
@@ -28,7 +28,7 @@ class Settings(metaclass=Singleton):
         self._geometries = {}
         self.external_editor_path = None
         self.external_editor_args = None
-        self.new_line_key = QKeySequence(Qt.SHIFT + Qt.Key_Return, Qt.SHIFT + Qt.Key_Enter)
+        self.new_line_key = QKeySequence(Qt.SHIFT | Qt.Key_Return, Qt.SHIFT | Qt.Key_Enter)
         self.send_key = QKeySequence(Qt.Key_Return, Qt.Key_Enter)
         self.terminal_tab_spaces = 4
         self.mpy_cross_path = None

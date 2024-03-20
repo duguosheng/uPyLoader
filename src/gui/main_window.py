@@ -1,8 +1,8 @@
 import os
 import subprocess
 
-from PyQt5.QtCore import QStringListModel, QModelIndex, Qt, QItemSelectionModel, QEventLoop
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileSystemModel, \
+from PySide6.QtCore import QStringListModel, QModelIndex, Qt, QItemSelectionModel, QEventLoop
+from PySide6.QtWidgets import QApplication, QMainWindow, QFileSystemModel, \
     QFileDialog, QInputDialog, QLineEdit, QMessageBox, QHeaderView
 
 from gui.mainwindow import Ui_MainWindow

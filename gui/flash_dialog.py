@@ -1,133 +1,182 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './gui/qt\flash_dialog.ui'
-#
-# Created by: PyQt5 UI code generator 5.6
-#
-# WARNING! All changes made in this file will be lost!
+################################################################################
+## Form generated from reading UI file 'flash_dialog.ui'
+##
+## Created by: Qt User Interface Compiler version 6.6.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-
-
-# Added by buildgui.py script to support pyinstaller
-from src.helpers.pyinstaller_helper import PyInstallerHelper
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QComboBox, QDialog, QFrame,
+    QHBoxLayout, QLabel, QLineEdit, QPlainTextEdit,
+    QPushButton, QSizePolicy, QSpacerItem, QVBoxLayout,
+    QWidget)
 
 class Ui_FlashDialog(object):
     def setupUi(self, FlashDialog):
-        FlashDialog.setObjectName("FlashDialog")
+        if not FlashDialog.objectName():
+            FlashDialog.setObjectName(u"FlashDialog")
         FlashDialog.resize(571, 426)
-        self.verticalLayout = QtWidgets.QVBoxLayout(FlashDialog)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label = QtWidgets.QLabel(FlashDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        self.verticalLayout = QVBoxLayout(FlashDialog)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.label = QLabel(FlashDialog)
+        self.label.setObjectName(u"label")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
-        self.label.setMinimumSize(QtCore.QSize(80, 0))
-        self.label.setMaximumSize(QtCore.QSize(80, 16777215))
-        self.label.setObjectName("label")
+        self.label.setMinimumSize(QSize(80, 0))
+        self.label.setMaximumSize(QSize(80, 16777215))
+
         self.horizontalLayout.addWidget(self.label)
-        self.pythonPathEdit = QtWidgets.QLineEdit(FlashDialog)
+
+        self.pythonPathEdit = QLineEdit(FlashDialog)
+        self.pythonPathEdit.setObjectName(u"pythonPathEdit")
         self.pythonPathEdit.setReadOnly(False)
-        self.pythonPathEdit.setObjectName("pythonPathEdit")
+
         self.horizontalLayout.addWidget(self.pythonPathEdit)
-        self.pickPythonButton = QtWidgets.QPushButton(FlashDialog)
-        self.pickPythonButton.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.pickPythonButton.setObjectName("pickPythonButton")
+
+        self.pickPythonButton = QPushButton(FlashDialog)
+        self.pickPythonButton.setObjectName(u"pickPythonButton")
+        self.pickPythonButton.setMaximumSize(QSize(50, 16777215))
+
         self.horizontalLayout.addWidget(self.pickPythonButton)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.label_2 = QtWidgets.QLabel(FlashDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
-        self.label_2.setSizePolicy(sizePolicy)
-        self.label_2.setMinimumSize(QtCore.QSize(80, 0))
-        self.label_2.setMaximumSize(QtCore.QSize(80, 16777215))
-        self.label_2.setObjectName("label_2")
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.label_2 = QLabel(FlashDialog)
+        self.label_2.setObjectName(u"label_2")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
+        self.label_2.setSizePolicy(sizePolicy1)
+        self.label_2.setMinimumSize(QSize(80, 0))
+        self.label_2.setMaximumSize(QSize(80, 16777215))
+
         self.horizontalLayout_2.addWidget(self.label_2)
-        self.firmwarePathEdit = QtWidgets.QLineEdit(FlashDialog)
+
+        self.firmwarePathEdit = QLineEdit(FlashDialog)
+        self.firmwarePathEdit.setObjectName(u"firmwarePathEdit")
         self.firmwarePathEdit.setReadOnly(False)
-        self.firmwarePathEdit.setObjectName("firmwarePathEdit")
+
         self.horizontalLayout_2.addWidget(self.firmwarePathEdit)
-        self.pickFirmwareButton = QtWidgets.QPushButton(FlashDialog)
-        self.pickFirmwareButton.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.pickFirmwareButton.setObjectName("pickFirmwareButton")
+
+        self.pickFirmwareButton = QPushButton(FlashDialog)
+        self.pickFirmwareButton.setObjectName(u"pickFirmwareButton")
+        self.pickFirmwareButton.setMaximumSize(QSize(50, 16777215))
+
         self.horizontalLayout_2.addWidget(self.pickFirmwareButton)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout_2)
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.label_4 = QtWidgets.QLabel(FlashDialog)
-        self.label_4.setObjectName("label_4")
+        self.label_4 = QLabel(FlashDialog)
+        self.label_4.setObjectName(u"label_4")
+
         self.horizontalLayout_4.addWidget(self.label_4)
-        self.portComboBox = QtWidgets.QComboBox(FlashDialog)
-        self.portComboBox.setMinimumSize(QtCore.QSize(100, 0))
-        self.portComboBox.setObjectName("portComboBox")
+
+        self.portComboBox = QComboBox(FlashDialog)
+        self.portComboBox.setObjectName(u"portComboBox")
+        self.portComboBox.setMinimumSize(QSize(100, 0))
+
         self.horizontalLayout_4.addWidget(self.portComboBox)
-        self.refreshButton = QtWidgets.QPushButton(FlashDialog)
-        self.refreshButton.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(PyInstallerHelper.resource_path("icons/refresh.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+
+        self.refreshButton = QPushButton(FlashDialog)
+        self.refreshButton.setObjectName(u"refreshButton")
+        icon = QIcon()
+        icon.addFile(u"icons/refresh.png", QSize(), QIcon.Normal, QIcon.Off)
         self.refreshButton.setIcon(icon)
-        self.refreshButton.setObjectName("refreshButton")
+
         self.horizontalLayout_4.addWidget(self.refreshButton)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem)
-        self.wiringButton = QtWidgets.QPushButton(FlashDialog)
-        self.wiringButton.setMinimumSize(QtCore.QSize(200, 0))
-        self.wiringButton.setObjectName("wiringButton")
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer)
+
+        self.wiringButton = QPushButton(FlashDialog)
+        self.wiringButton.setObjectName(u"wiringButton")
+        self.wiringButton.setMinimumSize(QSize(200, 0))
+
         self.horizontalLayout_4.addWidget(self.wiringButton)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout_4)
-        self.label_3 = QtWidgets.QLabel(FlashDialog)
-        self.label_3.setObjectName("label_3")
+
+        self.label_3 = QLabel(FlashDialog)
+        self.label_3.setObjectName(u"label_3")
+
         self.verticalLayout.addWidget(self.label_3)
-        self.outputEdit = QtWidgets.QPlainTextEdit(FlashDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.outputEdit.sizePolicy().hasHeightForWidth())
-        self.outputEdit.setSizePolicy(sizePolicy)
-        self.outputEdit.setMinimumSize(QtCore.QSize(400, 0))
-        self.outputEdit.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
-        self.outputEdit.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.outputEdit.setFrameShadow(QtWidgets.QFrame.Sunken)
+
+        self.outputEdit = QPlainTextEdit(FlashDialog)
+        self.outputEdit.setObjectName(u"outputEdit")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.outputEdit.sizePolicy().hasHeightForWidth())
+        self.outputEdit.setSizePolicy(sizePolicy2)
+        self.outputEdit.setMinimumSize(QSize(400, 0))
+        self.outputEdit.setLocale(QLocale(QLocale.English, QLocale.UnitedStates))
+        self.outputEdit.setFrameShape(QFrame.StyledPanel)
+        self.outputEdit.setFrameShadow(QFrame.Sunken)
         self.outputEdit.setLineWidth(1)
-        self.outputEdit.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.outputEdit.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.outputEdit.setUndoRedoEnabled(False)
-        self.outputEdit.setLineWrapMode(QtWidgets.QPlainTextEdit.NoWrap)
-        self.outputEdit.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
-        self.outputEdit.setObjectName("outputEdit")
+        self.outputEdit.setLineWrapMode(QPlainTextEdit.NoWrap)
+        self.outputEdit.setTextInteractionFlags(Qt.NoTextInteraction)
+
         self.verticalLayout.addWidget(self.outputEdit)
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.eraseButton = QtWidgets.QPushButton(FlashDialog)
-        self.eraseButton.setObjectName("eraseButton")
+        self.eraseButton = QPushButton(FlashDialog)
+        self.eraseButton.setObjectName(u"eraseButton")
+
         self.horizontalLayout_3.addWidget(self.eraseButton)
-        self.flashButton = QtWidgets.QPushButton(FlashDialog)
-        self.flashButton.setObjectName("flashButton")
+
+        self.flashButton = QPushButton(FlashDialog)
+        self.flashButton.setObjectName(u"flashButton")
+
         self.horizontalLayout_3.addWidget(self.flashButton)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
+
         self.retranslateUi(FlashDialog)
-        QtCore.QMetaObject.connectSlotsByName(FlashDialog)
+
+        QMetaObject.connectSlotsByName(FlashDialog)
+    # setupUi
 
     def retranslateUi(self, FlashDialog):
-        _translate = QtCore.QCoreApplication.translate
-        FlashDialog.setWindowTitle(_translate("FlashDialog", "Flash Firmware"))
-        self.label.setText(_translate("FlashDialog", "Python2 path"))
-        self.pickPythonButton.setText(_translate("FlashDialog", "Pick"))
-        self.label_2.setText(_translate("FlashDialog", "Firmware file"))
-        self.pickFirmwareButton.setText(_translate("FlashDialog", "Pick"))
-        self.label_4.setText(_translate("FlashDialog", "Port"))
-        self.wiringButton.setText(_translate("FlashDialog", "Wiring instructions"))
-        self.label_3.setText(_translate("FlashDialog", "Flasher output:"))
-        self.eraseButton.setText(_translate("FlashDialog", "Erase"))
-        self.flashButton.setText(_translate("FlashDialog", "Flash"))
+        FlashDialog.setWindowTitle(QCoreApplication.translate("FlashDialog", u"Flash Firmware", None))
+        self.label.setText(QCoreApplication.translate("FlashDialog", u"Python2 path", None))
+        self.pickPythonButton.setText(QCoreApplication.translate("FlashDialog", u"Pick", None))
+        self.label_2.setText(QCoreApplication.translate("FlashDialog", u"Firmware file", None))
+        self.pickFirmwareButton.setText(QCoreApplication.translate("FlashDialog", u"Pick", None))
+        self.label_4.setText(QCoreApplication.translate("FlashDialog", u"Port", None))
+        self.refreshButton.setText("")
+        self.wiringButton.setText(QCoreApplication.translate("FlashDialog", u"Wiring instructions", None))
+        self.label_3.setText(QCoreApplication.translate("FlashDialog", u"Flasher output:", None))
+        self.eraseButton.setText(QCoreApplication.translate("FlashDialog", u"Erase", None))
+        self.flashButton.setText(QCoreApplication.translate("FlashDialog", u"Flash", None))
+    # retranslateUi
 

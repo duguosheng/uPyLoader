@@ -1,91 +1,126 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './gui/qt\about_dialog.ui'
-#
-# Created by: PyQt5 UI code generator 5.6
-#
-# WARNING! All changes made in this file will be lost!
+################################################################################
+## Form generated from reading UI file 'about_dialog.ui'
+##
+## Created by: Qt User Interface Compiler version 6.6.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-
-
-# Added by buildgui.py script to support pyinstaller
-from src.helpers.pyinstaller_helper import PyInstallerHelper
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
+    QLayout, QSizePolicy, QSpacerItem, QVBoxLayout,
+    QWidget)
 
 class Ui_AboutDialog(object):
     def setupUi(self, AboutDialog):
-        AboutDialog.setObjectName("AboutDialog")
+        if not AboutDialog.objectName():
+            AboutDialog.setObjectName(u"AboutDialog")
         AboutDialog.resize(300, 120)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(AboutDialog.sizePolicy().hasHeightForWidth())
         AboutDialog.setSizePolicy(sizePolicy)
-        AboutDialog.setMinimumSize(QtCore.QSize(300, 120))
-        AboutDialog.setMaximumSize(QtCore.QSize(300, 120))
+        AboutDialog.setMinimumSize(QSize(300, 120))
+        AboutDialog.setMaximumSize(QSize(300, 120))
         AboutDialog.setSizeGripEnabled(False)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(AboutDialog)
-        self.horizontalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetFixedSize)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setContentsMargins(0, -1, -1, -1)
+        self.horizontalLayout_2 = QHBoxLayout(AboutDialog)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setSizeConstraint(QLayout.SetFixedSize)
+        self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setSpacing(7)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.iconLabel = QtWidgets.QLabel(AboutDialog)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, -1, -1, -1)
+        self.iconLabel = QLabel(AboutDialog)
+        self.iconLabel.setObjectName(u"iconLabel")
         sizePolicy.setHeightForWidth(self.iconLabel.sizePolicy().hasHeightForWidth())
         self.iconLabel.setSizePolicy(sizePolicy)
-        self.iconLabel.setMinimumSize(QtCore.QSize(64, 64))
-        self.iconLabel.setMaximumSize(QtCore.QSize(64, 64))
-        self.iconLabel.setText("")
-        self.iconLabel.setPixmap(QtGui.QPixmap(PyInstallerHelper.resource_path("icons/main-512.png")))
+        self.iconLabel.setMinimumSize(QSize(64, 64))
+        self.iconLabel.setMaximumSize(QSize(64, 64))
+        self.iconLabel.setPixmap(QPixmap(u"icons/main-512.png"))
         self.iconLabel.setScaledContents(True)
-        self.iconLabel.setObjectName("iconLabel")
+
         self.verticalLayout_2.addWidget(self.iconLabel)
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer_2)
+
+
         self.horizontalLayout_2.addLayout(self.verticalLayout_2)
-        spacerItem1 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem1)
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label = QtWidgets.QLabel(AboutDialog)
-        self.label.setObjectName("label")
+
+        self.horizontalSpacer_2 = QSpacerItem(10, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_2)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.label = QLabel(AboutDialog)
+        self.label.setObjectName(u"label")
+
         self.horizontalLayout.addWidget(self.label)
-        spacerItem2 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem2)
-        self.versionLabel = QtWidgets.QLabel(AboutDialog)
-        self.versionLabel.setObjectName("versionLabel")
+
+        self.horizontalSpacer = QSpacerItem(100, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout.addItem(self.horizontalSpacer)
+
+        self.versionLabel = QLabel(AboutDialog)
+        self.versionLabel.setObjectName(u"versionLabel")
+
         self.horizontalLayout.addWidget(self.versionLabel)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout)
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(-1, 0, -1, -1)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.label_2 = QtWidgets.QLabel(AboutDialog)
-        self.label_2.setObjectName("label_2")
+        self.label_2 = QLabel(AboutDialog)
+        self.label_2.setObjectName(u"label_2")
+
         self.horizontalLayout_3.addWidget(self.label_2)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem3)
-        self.buildDateLabel = QtWidgets.QLabel(AboutDialog)
-        self.buildDateLabel.setObjectName("buildDateLabel")
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_3)
+
+        self.buildDateLabel = QLabel(AboutDialog)
+        self.buildDateLabel.setObjectName(u"buildDateLabel")
+
         self.horizontalLayout_3.addWidget(self.buildDateLabel)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout_3)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem4)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer)
+
+
         self.horizontalLayout_2.addLayout(self.verticalLayout)
 
+
         self.retranslateUi(AboutDialog)
-        QtCore.QMetaObject.connectSlotsByName(AboutDialog)
+
+        QMetaObject.connectSlotsByName(AboutDialog)
+    # setupUi
 
     def retranslateUi(self, AboutDialog):
-        _translate = QtCore.QCoreApplication.translate
-        AboutDialog.setWindowTitle(_translate("AboutDialog", "About uPyLoader"))
-        self.label.setText(_translate("AboutDialog", "Version:"))
-        self.versionLabel.setText(_translate("AboutDialog", "XXX"))
-        self.label_2.setText(_translate("AboutDialog", "Build Date:"))
-        self.buildDateLabel.setText(_translate("AboutDialog", "XXX"))
+        AboutDialog.setWindowTitle(QCoreApplication.translate("AboutDialog", u"About uPyLoader", None))
+        self.iconLabel.setText("")
+        self.label.setText(QCoreApplication.translate("AboutDialog", u"Version:", None))
+        self.versionLabel.setText(QCoreApplication.translate("AboutDialog", u"XXX", None))
+        self.label_2.setText(QCoreApplication.translate("AboutDialog", u"Build Date:", None))
+        self.buildDateLabel.setText(QCoreApplication.translate("AboutDialog", u"XXX", None))
+    # retranslateUi
 

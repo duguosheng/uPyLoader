@@ -1,11 +1,10 @@
 from threading import Timer
 
-from PyQt5.QtCore import QTimer
-from PyQt5.QtGui import QContextMenuEvent
-from PyQt5.QtWidgets import QAction
-from PyQt5.QtWidgets import QHeaderView
-from PyQt5.QtWidgets import QMenu
-from PyQt5.QtWidgets import QTreeView
+from PySide6.QtCore import QTimer
+from PySide6.QtGui import QContextMenuEvent, QAction
+from PySide6.QtWidgets import QHeaderView
+from PySide6.QtWidgets import QMenu
+from PySide6.QtWidgets import QTreeView
 
 
 class TransferTreeView(QTreeView):

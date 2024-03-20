@@ -1,14 +1,14 @@
 from time import sleep
 
-from PyQt5.QtCore import pyqtSignal, Qt
-from PyQt5.QtWidgets import QMessageBox, QDialog
+from PySide6.QtCore import Signal, Qt
+from PySide6.QtWidgets import QMessageBox, QDialog
 
 from gui.file_transfer import Ui_FileTransferDialog
 from src.logic.file_transfer import FileTransfer
 
 
 class FileTransferDialog(QDialog, Ui_FileTransferDialog):
-    _update_signal = pyqtSignal()
+    _update_signal = Signal()
 
     UPLOAD = 0
     DOWNLOAD = 1

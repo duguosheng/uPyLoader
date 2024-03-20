@@ -3,8 +3,8 @@ import time
 from threading import Thread, Lock
 
 import serial
-from PyQt5.QtCore import pyqtSignal, Qt
-from PyQt5.QtWidgets import QDialog, QScrollBar, QMessageBox, QFileDialog
+from PySide6.QtCore import Signal, Qt
+from PySide6.QtWidgets import QDialog, QScrollBar, QMessageBox, QFileDialog
 
 from gui.flash_dialog import Ui_FlashDialog
 from src.connection.connection_scanner import ConnectionScanner
@@ -13,8 +13,8 @@ from src.utility.settings import Settings
 
 
 class FlashDialog(QDialog, Ui_FlashDialog):
-    _flash_output_signal = pyqtSignal()
-    _flash_finished_signal = pyqtSignal(int)
+    _flash_output_signal = Signal()
+    _flash_finished_signal = Signal(int)
 
     def __init__(self, parent):
         super(FlashDialog, self).__init__(parent, Qt.WindowCloseButtonHint)

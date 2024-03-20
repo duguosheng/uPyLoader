@@ -6,7 +6,7 @@ import os
 import sys
 import datetime
 import ntpath
-import PyQt5
+import PySide6
 import serial
 
 # Add working dir to path so we can use uPyLoader modules here
@@ -16,7 +16,7 @@ from src.utility.build_info import BuildInfo
 BuildInfo().save("build_info.json")
 
 a = Analysis(['main.py'],
-             pathex=[os.path.join(ntpath.dirname(PyQt5.__file__), 'Qt', 'bin')],
+             pathex=[os.path.join(ntpath.dirname(PySide6.__file__), 'Qt', 'bin')],
              binaries=[],
              datas=[],
              hiddenimports=[],
